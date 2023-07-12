@@ -1,8 +1,43 @@
 @import "colors.css";
 @import "buttons";
-$preto: #999;
+
+$primary-color: #fff;
+
+$primary-font: 'Times New Roman', Times, serif;
 
 div {
-  background-color: blue;
+  background-color: #0000;
   width: 100%;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: $primary-color;
+  font-family: $primary-font;
+}
+
+.modal {
+  h1 {
+    color: black;
+  }
+}
+
+ul {
+  text-align: center;
+  li {
+    display: inline-block;
+    list-style: none;
+    a {
+      display: block;
+      text-decoration: none;
+      background-color: blue;
+      &:hover {
+        background-color: red;
+      }
+    } 
+  }
 }

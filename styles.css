@@ -7,8 +7,38 @@ a {
 }
 
 div {
-  background-color: blue;
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
+}
+
+section {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.modal h1 {
+  color: black;
+}
+
+ul {
+  text-align: center;
+}
+ul li {
+  display: inline-block;
+  list-style: none;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  background-color: blue;
+}
+ul li a:hover {
+  background-color: red;
 }
 
 /*# sourceMappingURL=styles.css.map */
