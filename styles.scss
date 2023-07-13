@@ -28,6 +28,12 @@ $primary-font: 'Times New Roman', Times, serif;
   }
 }
 
+@mixin mobile {
+  @media(max-width: 600px) {
+    @content;
+  }
+}
+
 div {
   background-color: #0000;
   width: 100%;
@@ -49,6 +55,9 @@ h1 {
   h1 {
     color: black;
     @include title-large;
+    @include mobile {
+      color: pink;
+    }
   }
 }
 

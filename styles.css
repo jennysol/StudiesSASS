@@ -38,6 +38,11 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 1;
 }
+@media (max-width: 600px) {
+  .modal h1 {
+    color: pink;
+  }
+}
 
 ul {
   text-align: center;
