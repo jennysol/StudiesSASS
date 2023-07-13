@@ -5,6 +5,29 @@ $primary-color: #fff;
 
 $primary-font: 'Times New Roman', Times, serif;
 
+@mixin title-large {
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 1;
+}
+
+@mixin border-box {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+@mixin separador($color) {
+  &::after {
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #84e;
+  }
+}
+
 div {
   background-color: #0000;
   width: 100%;
@@ -13,6 +36,7 @@ div {
 section {
   max-width: 600px;
   margin: 0 auto;
+  @include border-box;
 }
 
 h1 {
@@ -21,8 +45,10 @@ h1 {
 }
 
 .modal {
+  @include separador(#84e);
   h1 {
     color: black;
+    @include title-large;
   }
 }
 
