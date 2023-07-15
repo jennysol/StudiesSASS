@@ -2,8 +2,36 @@
 @import "buttons";
 
 $primary-color: #fff;
+$secondary-color: #000;
 $primary-font: 'Times New Roman', Times, serif;
 $gutter: 20px;
+$theme: oceano;
+
+@if $theme == oceano {
+  $primary-color: blue;
+  $secondary-color: orange;
+} @else if $theme == deserto {
+  $primary-color: red;
+  $secondary-color: green;
+}
+
+@mixin device($device) {
+  @if $device == m {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
+  @else if $device == t {
+    @media (max-width: 300px) {
+      @content;
+    }
+  }
+  @else if $device == s {
+    @media (min-width: 300px) {
+      @content;
+    }
+  }
+}
 
 @mixin title-large {
   font-size: 10px + 10;
@@ -36,7 +64,13 @@ $gutter: 20px;
 
 div {
   background-color: #333;
-  width: 400px - 2 * $gutter;
+  width: 100%;
+  @include device(t) {
+    width: 80%;
+  }
+  @include device(m) {
+    width: 60%;
+  }
 }
 
 section {
