@@ -1,63 +1,17 @@
-@import "colors.css";
-a {
+/* Error: Undefined operation "#333 + #777".
+ *    ,
+ * 38 |   background-color: #333 + #777;
+ *    |                     ^^^^^^^^^^^
+ *    '
+ *   styles.scss 38:21  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  background-color: blueviolet;
-  width: 200px;
-  height: 40px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: Undefined operation "#333 + #777".\a    \2577 \a 38 \2502    background-color: #333 + #777;\a    \2502                      ^^^^^^^^^^^\a    \2575 \a   styles.scss 38:21  root stylesheet';
 }
-
-div {
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-}
-
-section {
-  max-width: 600px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-h1 {
-  color: #fff;
-  font-family: "Times New Roman", Times, serif;
-}
-
-.modal::after {
-  content: " ";
-  display: block;
-  width: 100px;
-  height: 4px;
-  background: #84e;
-}
-.modal h1 {
-  color: black;
-  font-size: 4em;
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  line-height: 1;
-}
-@media (max-width: 600px) {
-  .modal h1 {
-    color: pink;
-  }
-}
-
-ul {
-  text-align: center;
-}
-ul li {
-  display: inline-block;
-  list-style: none;
-}
-ul li a {
-  display: block;
-  text-decoration: none;
-  background-color: blue;
-}
-ul li a:hover {
-  background-color: red;
-}
-
-/*# sourceMappingURL=styles.css.map */

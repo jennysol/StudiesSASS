@@ -2,11 +2,11 @@
 @import "buttons";
 
 $primary-color: #fff;
-
 $primary-font: 'Times New Roman', Times, serif;
+$gutter: 20px;
 
 @mixin title-large {
-  font-size: 4em;
+  font-size: 10px + 10;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   line-height: 1;
@@ -35,8 +35,8 @@ $primary-font: 'Times New Roman', Times, serif;
 }
 
 div {
-  background-color: #0000;
-  width: 100%;
+  background-color: #333;
+  width: 400px - 2 * $gutter;
 }
 
 section {
