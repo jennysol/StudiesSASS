@@ -8,7 +8,7 @@ a {
 
 div {
   background-color: #333;
-  width: 100%;
+  width: 0%;
 }
 @media (max-width: 300px) {
   div {
@@ -66,8 +66,8 @@ ul li a {
   text-decoration: none;
   background-color: blue;
 }
-ul li a:hover {
-  background-color: red;
+ul li a:hover, ul li a.active {
+  background-color: #6666ff;
 }
 
 /*# sourceMappingURL=styles.css.map */

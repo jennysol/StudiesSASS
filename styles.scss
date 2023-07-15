@@ -7,6 +7,14 @@ $primary-font: 'Times New Roman', Times, serif;
 $gutter: 20px;
 $theme: oceano;
 
+@function grid($coluns, $total: 12) {
+  @return round(calc($coluns / $total)) * 100%;
+}
+
+@function em($pixels, $context: 16) {
+  @return ($pixels / $context) * 1em;
+}
+
 @if $theme == oceano {
   $primary-color: blue;
   $secondary-color: orange;
@@ -64,7 +72,7 @@ $theme: oceano;
 
 div {
   background-color: #333;
-  width: 100%;
+  width: grid(4);
   @include device(t) {
     width: 80%;
   }
@@ -104,8 +112,8 @@ ul {
       display: block;
       text-decoration: none;
       background-color: blue;
-      &:hover {
-        background-color: red;
+      &:hover, &.active {
+        background-color: lighten(blue, 20%);
       }
     } 
   }
