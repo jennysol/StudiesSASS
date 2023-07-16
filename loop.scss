@@ -1,0 +1,27 @@
+$container: 960;
+$gutter: 20;
+$columns: 12;
+
+$number: 1;
+
+$list: facebook twutter;
+
+@each $item in $list {
+  .rede-#{$item} {
+    background: url('../../../Pictures/Fototeca\ do\ Photo\ Booth/');
+  }
+}
+
+@while $number <= 6 {
+  .type-#{$number} {
+    font-size: 16 * $number + px;
+  }
+  $number: $number + 2;
+}
+
+@for $i from 1 through 12 {
+  $width: calc($container / $columns) * $i - $gutter;
+  .grid-#{$i} {
+    width: 200px* $i;
+  }
+}
