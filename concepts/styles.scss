@@ -1,9 +1,9 @@
 @import "colors.css";
 @import "buttons";
 
-$primary-color: #fff;
-$secondary-color: #000;
-$primary-font: 'Times New Roman', Times, serif;
+$primary-color: $white;
+$secondary-color: $black;
+$primary-font: "Times New Roman", Times, serif;
 $gutter: 20px;
 $theme: oceano;
 
@@ -28,13 +28,11 @@ $theme: oceano;
     @media (max-width: 300px) {
       @content;
     }
-  }
-  @else if $device == t {
+  } @else if $device == t {
     @media (max-width: 300px) {
       @content;
     }
-  }
-  @else if $device == s {
+  } @else if $device == s {
     @media (min-width: 300px) {
       @content;
     }
@@ -44,7 +42,7 @@ $theme: oceano;
 @mixin title-large {
   font-size: 10px + 10;
   font-weight: bold;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   line-height: 1;
 }
 
@@ -56,7 +54,7 @@ $theme: oceano;
 
 @mixin separador($color) {
   &::after {
-    content: ' ';
+    content: " ";
     display: block;
     width: 100px;
     height: 4px;
@@ -65,7 +63,7 @@ $theme: oceano;
 }
 
 @mixin mobile {
-  @media(max-width: 600px) {
+  @media (max-width: 600px) {
     @content;
   }
 }
@@ -112,9 +110,10 @@ ul {
       display: block;
       text-decoration: none;
       background-color: blue;
-      &:hover, &.active {
+      &:hover,
+      &.active {
         background-color: lighten(blue, 20%);
       }
-    } 
+    }
   }
 }
