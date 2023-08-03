@@ -5,9 +5,7 @@ body {
 }
 
 p {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 14px;
-  line-height: 20px;
+  @include type-2(14);
 }
 
 img {
@@ -22,10 +20,9 @@ img {
 
 #form-erro span,
 #form-send span {
-  font-size: 18px;
-  line-height: 25px;
   margin-bottom: 10px;
   display: block;
+  @include type-1(18);
 }
 
 #form-send {
@@ -40,12 +37,11 @@ img {
   border: 3px solid $yellow;
   padding: 10px 30px;
   color: $yellow;
-  font-size: 14px;
-  line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 0.1em;
   transition: all 0.5s ease;
+  @include type-1(14);
 }
 
 .btn:hover {
@@ -59,14 +55,13 @@ img {
 }
 
 .subtitulo {
-  font-size: 24px;
-  line-height: 30px;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: $black;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 40px;
+  @include type-1(24);
 }
 
 .subtitulo:after {
@@ -79,13 +74,12 @@ img {
 }
 
 .subtitulo-interno {
-  font-size: 24px;
-  line-height: 30px;
   font-weight: bold;
   letter-spacing: 0.1em;
   color: $black;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @include type-1(24);
 }
 
 .subtitulo-interno:after {
@@ -123,10 +117,9 @@ img {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  font-size: 14px;
-  line-height: 20px;
   padding: 10px 0;
   transition: all 0.3s ease;
+  @include type-1(14);
 }
 
 .header_menu ul li a:hover {
@@ -150,10 +143,10 @@ img {
 }
 
 .introducao h1 {
-  font-size: 48px;
   color: $white;
   font-weight: bold;
   text-transform: uppercase;
+  @include type-1(48);
 }
 
 .quote-externo {
@@ -180,8 +173,8 @@ img {
 .quote-externo cite {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   letter-spacing: 0.1em;
+  @include type-1(14);
 }
 
 /*Introducao Interna*/
@@ -196,9 +189,9 @@ img {
 }
 
 .introducao-interna h1 {
-  font-size: 36px;
   font-weight: bold;
   text-transform: uppercase;
+  @include type-1(36);
 }
 
 .introducao-interna h1:after {
@@ -227,11 +220,10 @@ img {
 
 .produtos_lista li h3 {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
+  @include type-1(18);
 }
 
 .produtos_lista li h3:after {
@@ -320,11 +312,10 @@ img {
 
 .qualidade_lista li h3 {
   font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 20px;
+  @include type-1(18);
 }
 
 .qualidade_lista li h3:after {
@@ -361,12 +352,11 @@ img {
 }
 
 .footer h3 {
-  font-size: 18px;
-  line-height: 25px;
   color: $yellow;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: bold;
+  @include type-1(18);
 }
 
 .footer h3:after {
@@ -383,14 +373,13 @@ img {
 }
 
 .footer_contato ul li {
-  font-size: 14px;
-  line-height: 20px;
-  font-family: Georgia, "Times New Roman", serif;
+  @include type-2(14);
 }
 
 .footer_redes ul li {
   display: inline-block;
   margin-right: 10px;
+  @include type-2(14);
 }
 
 .footer_redes ul li a {
