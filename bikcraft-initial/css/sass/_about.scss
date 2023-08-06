@@ -11,10 +11,17 @@
   margin-bottom: 1em;
   padding-right: 60px;
   @include type-1(18);
+  @include device(mobile) {
+    padding-right: 0px;
+    @include type-1(14);
+  }
 }
 
 .missao_sobre ul li {
   @include type-2(18);
+  @include device(mobile) {
+    @include type-1(14);
+  }
 }
 
 .foto-equipe {
